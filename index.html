@@ -104,38 +104,8 @@
         s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
         var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
         window.kommunicate = m; m._globals = kommunicateSettings;
-    })(document, window.kommunicate || {});
+    })(document, window.kommunicate || "Hello");
 /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
-  
-// AWS Lex Code
-function pushChat(msg) {
-    // send it to the Lex runtime
-    var params = {
-        botAlias: '$LATEST',
-        botName: 'OctankFinancial',
-        inputText: msg,
-        sessionAttributes: {}
-    };
-    var gotResponse = false;
-    var timeout = false;
-
-    //speakOut(getFillerWords());
-    lexruntime.postText(params, function (err, data) {
-        if (err) {
-            console.log(err, err.stack);
-        }
-        if (data) {
-            console.log('data:'+ JSON.stringify(data));
-            console.log('Intent: '+ data.intentName);
-            console.log('Slots: '+ JSON.stringify(data.slots));
-            sessionAttributes = data.sessionAttributes;
-            gotResponse = true;
-            insertChat("me", data.message,7000);
-        }
-    });
-}
-  
-pushChat("Hello\n");
   
 </script>
   
