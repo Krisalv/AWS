@@ -1,0 +1,19 @@
+/* Start Viewport desktop */
+#body-content, header, header > #header-wrap, footer, footer > #footer-wrap { min-width:980px; }
+.content-full > .content-inner > [objtype], .content-full > .content-inner > shared > [objtype] { min-width:980px; }
+.content-fixed > .content-inner { width:980px; }
+.wse-men > nav { display:block; }
+.wse-men .menu-toggle { display:none; }
+body { background-color:#ffffff; background-repeat:repeat; background-size:auto; background-position:0 0; background-attachment:initial; background-image:none; -moz-background-size:auto; -webkit-background-size:auto; }
+#txtBox_66 { top:25px; left:75px; width:459px; height:62px; z-index:101; }
+header, header > #header-wrap { height:110px; }
+header { margin-top:0px; margin-bottom:0px; }
+footer, footer > #footer-wrap { height:20px; }
+footer { margin-top:0px; margin-bottom:0px; }
+#body-content { min-height:350px; }
+#hdr_staticMenu_58 { top:8px; left:661px; width:364px; height:96px; z-index:9920; }
+#hdr_imageContainer_111 { top:18px; left:-35px; width:110px; height:76px; z-index:103; }
+#hdr_imageContainer_111 img { margin-top:-17px; margin-left:0px; width:110px; height:110px; }
+#txtBox_63 { width:176px; height:44px; z-index:106; }
+#ftr_socialBar_72 { z-index:107; }
+/* End Viewport desktop */
