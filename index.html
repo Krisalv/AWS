@@ -106,10 +106,9 @@
 <script type="text/javascript">
     window.onload = function() {
         var params = {
-            botAlias: 'alias_of_your_bot',
-            botName: 'name_of_your_bot', 
+            botAlias: 'dev',
+            botName: 'LexBot', 
             inputText: 'welcome to chatbot', 
-            userId: 'some_user_id',
         };
         lexruntime.postText(params, function(err, data) {
             if (err) console.log(err, err.stack); 
