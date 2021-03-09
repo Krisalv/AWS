@@ -103,19 +103,17 @@
 /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
 </script>
 
-<script type="text/javascript">
-    var lexruntime = new AWS.LexRuntime();
-    var params = {
-        botAlias: 'dev',
-        botName: 'LexBot', 
-        inputText: 'welcome to chatbot',
-        userId: 'pendingUser',
-    };
-    lexruntime.postText(params, function(err, data) {
-        if (err) console.log(err, err.stack); 
-        else     console.log(data);           
-    });
-</script>
+var lexruntime = new AWS.LexRuntime();
+var params = {
+    botAlias: 'dev',
+    botName: 'LexBot', 
+    inputText: 'welcome to chatbot',
+    userId: 'pendingUser',
+};
+lexruntime.postText(params, function(err, data) {
+    if (err) console.log(err, err.stack); 
+    else     console.log(data);           
+});
     
 </body>
 </html>
