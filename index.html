@@ -102,6 +102,21 @@
     })(document, window.kommunicate || {});
 /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
 </script>
+
+<script type="text/javascript">
+    window.onload = function() {
+        var params = {
+            botAlias: 'alias_of_your_bot',
+            botName: 'name_of_your_bot', 
+            inputText: 'welcome to chatbot', 
+            userId: 'some_user_id',
+        };
+        lexruntime.postText(params, function(err, data) {
+            if (err) console.log(err, err.stack); 
+            else     console.log(data);           
+        });
+    }
+</script>
     
 </body>
 </html>
