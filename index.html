@@ -104,11 +104,12 @@
 </script>
 
 <script type="text/javascript">
-    window.onload = function() {
+    window.onload = function startLex() {
         var params = {
             botAlias: 'dev',
             botName: 'LexBot', 
-            inputText: 'welcome to chatbot', 
+            inputText: 'welcome to chatbot',
+            userId: 'pendingUser',
         };
         lexruntime.postText(params, function(err, data) {
             if (err) console.log(err, err.stack); 
